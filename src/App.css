@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 7px solid #212121;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(64, 64, 64);
+  text-align: center;
+  background-color: #272626;
+}
+
+.display {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-left: px;
+  padding-top: 10px;
+  border: 3px solid #212121;
+  box-shadow: 0 0 8px rgb(23, 22, 22);
+  border-radius: 10px;
+  background-color: #ccc;
+  color: rgb(46, 46, 46);
+  height: 60px;
+  text-align: end;
+  /* code ที่ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.row {
+  display: contents;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.number {
+  background-color: #2f2f2f;
+  color: #acacac;
+}
+
+.sum,
+.clear {
+  background-color: #4b4b4b;
+  color: #e0e0e0;
+}
+
+.clear {
+  font-weight: 450;
+  font-size: 18px;
+}
+
+.pad {
+  background-color: #26386d;
+  color: #acacac;
+}
+
+button:hover {
+  background-color: #8d8d8d;
+  color: #515255;
+  border: none;
+}
+
+button:focus
+/* button:focus-visible  */ {
+  background-color: #d6d6d6;
+  color: #212121;
+}
